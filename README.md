@@ -1,6 +1,5 @@
 # Automate-Tags
-Project Description:
-
+Project Description:  
 This project is used automate tasks to bulk modify tags for the image files (.jpg) , video files (.mp4) based on the folder name. This project is a part of google bulk up-loader which is under development. The drawbacks of the present google photos up-loader it doesn't allow images having same resemblance. Such drawback can be nullified by adding "Title" tag to files. Since, It is not an easy task to add tags to all files a script has been developed in python to automate the task. This script adds title tag to all files present in folder and sub directories followed by image count for image files and video count for video files. Hence, The tagged files having same resemblance can be uploaded successfully.
 
 Required Softwares and Tools:
