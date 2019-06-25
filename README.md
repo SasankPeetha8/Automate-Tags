@@ -37,6 +37,6 @@ After running the above command, the files present in the current directory and 
 
 **_<ins>Errors:</ins>_**
 1) **FileNotFoundError: [WinError 2] The system cannot find the file specified: 'modified_video-file-name.mp4' -> 'video-file-name.mp4'**  
-    >>The above error indicates that the path to "FFMPEG" has not been initialised properly. Here "video-file-name" refers to the name       >>of an video file. Please refer "Step 5" in "Installing FFMEPG and EXIFTOOL (Windows OS only)" or the following link:                   >>https://m.wikihow.com/Install-FFmpeg-on-Windows.  
+    >>The above error indicates that the path to "FFMPEG" has not been initialised properly. Here "video-file-name" refers to the name       of an video file. Please refer "Step 5" in "Installing FFMEPG and EXIFTOOL (Windows OS only)" or the following link:                     https://m.wikihow.com/Install-FFmpeg-on-Windows.  
 2) **FileNotFoundError: [WinError 2] The system cannot find the file specified: 'image-file-name.jpg_original'**
-    >>The above error indicates that the path to "EXIFTOOL" has not been initialised properly. Here "image-file-name" refers to the name     >>of an image file. Please refer "Step 5" in "Installing FFMEPG and EXIFTOOL (Windows OS only)" or the following link:                   >>https://www.sno.phy.queensu.ca/~phil/exiftool/install.html.
+    >>The above error indicates that the path to "EXIFTOOL" has not been initialised properly. Here "image-file-name" refers to the name     of an image file. Please refer "Step 5" in "Installing FFMEPG and EXIFTOOL (Windows OS only)" or the following link:                     https://www.sno.phy.queensu.ca/~phil/exiftool/install.html.
