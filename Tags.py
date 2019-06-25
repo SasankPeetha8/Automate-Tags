@@ -1,31 +1,28 @@
+#Importing Required Modules
 import glob
 import os, sys
 from time import sleep
 
+#Creating Empty List for Image files and Video Files
 img_files = []
 vid_files =[]
-#folder_name = os.getcwd().split(os.sep)[-1]
 
-def image_list():					  #Getting Image List
-	#img_list = []					  #Empty list to save image filenames in list
-	#print("Getting list of Images..") #Showing Process
-	img_files.clear()
-	for file in glob.glob("*.jpg"):   #Searching for images
-		img_files.append(file)         #Appendign Image filename in list
-	return True                   #Returning list contents to original list
+def image_list():
+	img_files.clear()			#Clearing list named "img_files".
+	for file in glob.glob("*.jpg"):   	#Searching for images in current directory.
+		img_files.append(file)         	#Appending Image filenames in list.
+	return True
 
-def videos_list():					  #Getting Video List
-	#vid_list = []                     #Empty list to save video filenames in list
-	#print("Getting list of Videos..") #Showing Process
-	vid_files.clear()
-	for file in glob.glob("*.mp4"):   #Searching for videos
-		vid_files.append(file)         #Appending Video filename in list
-	return True                   #Returning list contents to original list
+def videos_list():
+	vid_files.clear()			#Clearing list named "vid_files".
+	for file in glob.glob("*.mp4"):   	#Searching for videos in current directory.
+		vid_files.append(file)         	#Appending Video filenames in list.
+	return True
 
 def progress(file,len_files, count):
-	percentage = ((count/len_files)*100)
-	progress_bar = "█" * int(percentage/2) + "-" * (50-int(percentage/2))
-	progress = "{}[{}/{}]:[{}][{:.1f}%]".format(file,count,len_files, progress_bar, percentage)
+	percentage = ((count/len_files)*100)								#Formula for Calculating Percentage
+	progress_bar = "█" * int(percentage/2) + "-" * (50-int(percentage/2))				#Creating progress_bar as per the calculation of percentage.
+	progress = "{}[{}/{}]:[{}][{:.1f}%]".format(file,count,len_files, progress_bar, percentage)	#Formatting progress using progress_bar and percentage. 
 	return progress
 
 def img_title( folder_name, files):
